@@ -1,0 +1,25 @@
+# 设置启用的环境
+spring:
+  profiles:
+    active: ${profile.active}
+
+---
+# 开发环境
+spring:
+  profiles: dev
+server:
+  port: 9090
+---
+# 生产环境
+spring:
+  profiles: prod
+server:
+  port: 9190
+---
+# 测试环境
+spring:
+  profiles: test
+server:
+  port: 9290
+---
+
